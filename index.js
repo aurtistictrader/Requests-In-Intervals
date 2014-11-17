@@ -14,8 +14,8 @@ app.listen(app.get('port'), function() {
 })
 
 
-setInterval(timed, 10000)
-function timed() {
+// setInterval(timed, 10000)
+// function timed() {
 var phantom = require('phantom');
 	phantom.create(function (ph) {
 	  ph.createPage(function (page) {
@@ -28,6 +28,6 @@ var phantom = require('phantom');
 	    });
 	  });
 	});
-}
+// }
 
 
