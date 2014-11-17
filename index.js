@@ -15,7 +15,7 @@ app.listen(app.get('port'), function() {
 })
 
 function timed() {
-	request('http://remind-me-yo.herokuapp.com/ghettoping', function (error, response, body) {
+	request('http://google.com', function (error, response, body) {
 	  if (!error && response.statusCode == 200) {
 	    console.log('pinged') // Print the google web page.
 	  }
