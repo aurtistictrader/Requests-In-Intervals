@@ -11,10 +11,10 @@ app.get('/', function(request, response) {
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
   
-	// setInterval(timed, 10000);
 })
 
 
+setInterval(timed, 10000);
 function timed() {
 var phantom = require('phantom');
 	phantom.create(function (ph) {
