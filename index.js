@@ -1,4 +1,5 @@
 var express = require('express')
+var phantom = require('phantom')
 var app = express();
 
 app.set('port', (process.env.PORT || 5000))
@@ -16,7 +17,6 @@ app.listen(app.get('port'), function() {
 
 // setInterval(timed, 10000)
 function timed() {
-var phantom = require('phantom');
 	phantom.create(function (ph) {
 	  ph.createPage(function (page) {
 	    page.open("http://remind-me-yo.herokuapp.com/ghettoping", function (status) {
